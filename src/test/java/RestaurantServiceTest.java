@@ -24,7 +24,7 @@ class RestaurantServiceTest {
     @Test
     public void searching_for_existing_restaurant_should_return_expected_restaurant_object() throws restaurantNotFoundException {
         restaurant_adding_for_testing();
-        assertEquals("Amelie's cafe",restaurant.getName());
+        assertEquals("Amelie's cafe",service.findRestaurantByName("Amelie's cafe").getName());
     }
 
     @Test
